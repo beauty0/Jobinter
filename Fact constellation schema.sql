@@ -8,12 +8,12 @@ CREATE TABLE Customers (
 CREATE TABLE Customer_Addresses (
 	Address_ID	 	int identity not null primary key,
 	Customer_ID	 	Int not null,
-    Address_Type	 	VARCHAR(20) NOT NULL,    /* Note:  FK does not infer NOT NULL		*/
+        Address_Type	 	VARCHAR(20) NOT NULL,    /* Note:  FK does not infer NOT NULL		*/
 	Street_Address1	 	VARCHAR(90),
 	Street_Address2	 	VARCHAR(90),
 	City		 	nvarchar(255),
 	Postal_Code	 	nvarchar(255),
-     Country		nvarchar(255),
+         Country		nvarchar(255),
 	State_Province	 	NVARCHAR(255)
 	);
 
