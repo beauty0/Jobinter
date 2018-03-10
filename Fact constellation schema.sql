@@ -11,10 +11,10 @@ CREATE TABLE Customer_Addresses (
         Address_Type	 	VARCHAR(20) NOT NULL,    /* Note:  FK does not infer NOT NULL		*/
 	Street_Address1	 	VARCHAR(90),
 	Street_Address2	 	VARCHAR(90),
-	City		 	nvarchar(255),
-	Postal_Code	 	nvarchar(255),
-         Country		nvarchar(255),
-	State_Province	 	NVARCHAR(255)
+	City		 	nvarchar(50),
+	Postal_Code	 	nvarchar(50),
+         Country		nvarchar(50),
+	State_Province	 	NVARCHAR(50)
 	);
 
 	CREATE TABLE Products (
