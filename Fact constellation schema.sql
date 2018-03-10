@@ -2,7 +2,8 @@ CREATE TABLE Customers (
 	Customer_ID	 	int identity not null PRIMARY KEY,
 	First_name	 	VARCHAR(50) NOT NULL,
 	Last_name	 	VARCHAR(100) NOT NULL,
-	Email		 	VARCHAR(45)
+	Email		 	VARCHAR(45) Not Null,
+	Age                       Float not Null
 	);
 CREATE TABLE Customer_Addresses (
 	Address_ID	 	int identity not null primary key,
