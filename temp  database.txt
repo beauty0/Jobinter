@@ -1,0 +1,28 @@
+create  DATABASE NewTem;
+GO
+USE NewTem;
+Go
+
+---create temp tab----
+create table #tmpCus(
+AccountID int identity not null primary key,
+Firstname varchar(50) not null,
+LastName varchar(50) not null
+);
+----insert values into #tmpCus table--------
+
+GO
+SET IDENTITY_INSERT #tmpCus ON;
+
+insert dbo.#tmpCus(AccountID,Firstname,LastName)
+      values(1, 'BEN', 'SMITH'),
+	         (2,'RICHARD', 'JOE'),
+			 (3, 'LINDA', 'BROWN'),
+			 (4, 'GARY', 'BRIEN'),
+			 (5,'ERIC','PETER');
+
+SET IDENTITY_INSERT #tmpCus OFF;
+----select from dbo.#tmpCus----
+
+select *
+from dbo.#tmpCus;
