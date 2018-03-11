@@ -1,0 +1,15 @@
+ INSERT into dbo.Customer_Addresses (Address_ID, CUSTOMERS_ID, Street_Address1, Street_Address2,City,Postal_Code,Country,State_Province)
+VALUES(61,2,'38 Doolin House','Clare Village','Co.Dublin','D17 NP49','Ireland', 'Dublin');
+
+
+INSERT into dbo.Customer_Addresses (Address_ID, CUSTOMERS_ID, Street_Address1, Street_Address2,City,Postal_Code,Country,State_Province)
+VALUES(62,3,'1A Christchurch Place','Christchurch','Co.Dublin','D08 R527','Ireland', 'Dublin');
+
+INSERT into dbo.Customer_Addresses (Address_ID, CUSTOMERS_ID, Street_Address1, Street_Address2,City,Postal_Code,Country,State_Province)
+VALUES(63,4,'6 The Orchard','Carpenterstown','Co.Dublin',' D15 PY20','Ireland', 'Dublin');
+
+INSERT into dbo.Customer_Addresses (Address_ID, CUSTOMERS_ID, Street_Address1, Street_Address2,City,Postal_Code,Country,State_Province)
+VALUES(64,5,'1 The Maples','Forest Park','Co. Laois', 'R32 YE81','Ireland', 'Portlaoise');
+
+INSERT into dbo.Customer_Addresses (Address_ID, CUSTOMERS_ID, Street_Address1, Street_Address2,City,Postal_Code,Country,State_Province)
+VALUES(65,6,'Apartment 10','Hartley Park','Co. Leitrim', 'R32 YE81','Ireland', 'Portlaoise');
