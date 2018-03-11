@@ -1,5 +1,5 @@
 INSERT into dbo.Orders(Customer_ID, Address_ID,Product_ID,timeID,OrderPrice,OrderAmount,Order_ID)
-VALUES(2,61 ,41, 21,16.09,5,111);
+VALUES(2,61,41, 21,16.09,5,111);
 
 INSERT into dbo.Orders(Customer_ID, Address_ID,Product_ID,timeID,OrderPrice,OrderAmount,Order_ID)
 VALUES(3,62 ,42, 22,4.13,2,112);
