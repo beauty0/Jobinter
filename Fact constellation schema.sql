@@ -8,7 +8,6 @@ CREATE TABLE Customers (
 CREATE TABLE Customer_Addresses (
 	Address_ID	 	int identity not null primary key,
 	Customer_ID	 	Int not null,
-        Address_Type	 	VARCHAR(20) NOT NULL,    /* Note:  FK does not infer NOT NULL		*/
 	Street_Address1	 	VARCHAR(90),
 	Street_Address2	 	VARCHAR(90),
 	City		 	nvarchar(50),
@@ -19,42 +18,43 @@ CREATE TABLE Customer_Addresses (
 
 	CREATE TABLE Products (
 	Product_ID	 	int identity not null PRIMARY KEY,
-	Product_Name  varchar(50) not null,
-	Product_Brand    Varchar(50) not null,
-	Product_type  VARCHAR(50)not null
+	Product_Name  varchar(90) not null,
+	Product_Brand    NVarchar(90) not null,
+	Product_type  NVARCHAR(90)not null
 
 );
 
 CREATE TABLE Shipper (
 	ShipperID	 	int identity not null PRIMARY KEY,
 	Address_ID	 	int not null,
-	FirstName	 	Varchar(50) not null,
-	LastName	 VARCHAR(50) not null,
-	Shipment_Method	 VARCHAR(50)
+	ShipperName	 	NVarchar(90) not null,
+	Shipment_Method	         VARCHAR(90)
+	
 	);
 
 CREATE TABLE Times (
 	timeID	 	int identity not null PRIMARY KEY,
-	day_of_week	 	Date not null,
-	MONTH	 DATE not null,
-	YEAR    DATE NOT NULL
+	OrderDate       DATETIME not null 
 	);
 
 	CREATE TABLE Orders (
+	Order_ID    int identity not null PRIMARY KEY,          
 	Customer_ID	 	int  not null,
 	Address_ID	 	int  not null,
 	Product_ID	 	int not null,
 	timeID	 	 int not null ,
-	dollar_sold  float not null,
-	units_sold float not null
+	OrderPrice  Money not null,
+	OrderAmount int not null
 	);
 
 	CREATE TABLE ShippingFact(
-	Product_ID	 	int not null,
-	ShipperID	 	int  not null,
-	timeID	 	int  not null,
-	Shipping_location nvarchar(255) not null,
+	ShipInfoID int identity not null Primary Key
+	ShipperID   int  not null,	
+	Order_ID  int   not null,
+	Product_ID  int not null,
+	Shipping_location varchar(50) not null,
 	Shipping_destination nvarchar(255) not null,
-	ship_cost  float not null,
-	units_shipped float not null
+	Ship_cost  Money not null,
+	Shipping_Date Date not null
+
 	);
