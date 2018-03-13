@@ -1,0 +1,32 @@
+SET IDENTITY_INSERT dbo.Post ON;
+ INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(61, 12,' you guess my name','2018-03-14 14:23:44');
+
+INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(62, 13,'Am are party','2018-02-14 12:13:44');
+
+INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(63, 14,'No am not loving it','2017-05-14 14:03:14' );
+
+INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(64, 15,'Am leaving','2018-01-21  13:03:14' );
+
+INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(65, 16,'Am home', '2018-01-12 16:03:14');
+
+INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(66, 17,'Same here','2017-10-25 18:06:14' );
+
+INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(67, 18,'l hate it','2018-01-25  15:06:14 ');
+
+INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(68, 19,'Nothin gmuch', '2018-02-15 16:06:14' );
+
+INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(69, 20,'Hello','2018-01-15 17:06:14' );
+
+INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(70, 21, 'good day', '2018-01-15 17:06:14');
+
+SET IDENTITY_INSERT dbo.Post OFF;
