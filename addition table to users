@@ -34,4 +34,9 @@ VALUES(21,'Carlie',28, '2017-02-15','2020-02-10','Dublin');
 INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
 VALUES(22,'Benny',26, '2017-04-25','2020-06-17','Dublin');
 
+INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
+VALUES(23,'Penny',27, '2017-04-25','2020-06-17','Dublin');
+
+
+
 SET IDENTITY_INSERT users OFF;
