@@ -1,0 +1,102 @@
+CREATE TABLE user(
+user_ID INT IDENTITY  NOT NULL PRIMARY KEY,
+user_NAME VARCHAR (50) NOT NULL,
+user_age int (50) NOT NULL,
+Join_date  Date (13), Not null,
+End_ date  Date  (255),
+Location Varchar  (100)
+);
+
+CREATE Post (
+Post_ID INT IDENTITY NOT NULL PRIMARY KEY,
+User_ID INT NOT NULL,
+Post_Message Varchar(MAX),
+Post_time  Datetime not null,
+CONSTRAINT FK_us_Userid
+FOREIGN KEY(user_ID)
+ REFERENCES user
+ );
+
+GO
+
+----INSERT VALUES------
+ SET IDENTITY_INSERT user ON;
+
+ INSERT into dbo.user(user_ID,user_NAME,user_age, Join_date, End_date, Location)
+VALUES(2,'Cinda', 21,'2018-03-14', 'Null', 'Portlaoise');
+
+ INSERT into dbo.user(user_ID,user_NAME,user_age, Join_date, End_date, Location)
+VALUES(3,'WHITMER',18,'2018-02-14','Null','Dublin');
+
+
+SET IDENTITY_INSERT user OFF;
+
+
+SET IDENTITY_INSERT user ON;
+
+ INSERT into dbo.customerLg(CUSTOMERS_ID,LAST_NAME,FIRST_NAME,PHONE,CUS_ADDRESS,CITY,CUS_STATE,ZIP)
+VALUES(4,'Weber',28,'2017-05-14','null', 'Leitrim');
+
+ INSERT into dbo.customerLg(CUSTOMERS_ID,LAST_NAME,FIRST_NAME,PHONE,CUS_ADDRESS,CITY,CUS_STATE,ZIP)
+VALUES(5,'Sopoline','23','2018-01-21','Null','Cork',);
+
+
+INSERT into dbo.customerLg(CUSTOMERS_ID,LAST_NAME,FIRST_NAME,PHONE,CUS_ADDRESS,CITY,CUS_STATE,ZIP)
+VALUES(6,'Neil', 27, '2017-12-23','2018-01-12','Dublin');
+
+INSERT into dbo.customerLg(CUSTOMERS_ID,LAST_NAME,FIRST_NAME,PHONE,CUS_ADDRESS,CITY,CUS_STATE,ZIP)
+VALUES(7,'Anthony','Rick','2018-03-05','null','London');
+
+INSERT into dbo.customerLg(CUSTOMERS_ID,LAST_NAME,FIRST_NAME,PHONE,CUS_ADDRESS,CITY,CUS_STATE,ZIP)
+VALUES(8,'Rick',31,'2017-10-25','null','Dublin');
+
+INSERT into dbo.customerLg(CUSTOMERS_ID,LAST_NAME,FIRST_NAME,PHONE,CUS_ADDRESS,CITY,CUS_STATE,ZIP)
+VALUES(9,'Yamine',29, 2018-01-25,'null','London');
+
+INSERT into dbo.customerLg(CUSTOMERS_ID,LAST_NAME,FIRST_NAME,PHONE,CUS_ADDRESS,CITY,CUS_STATE,ZIP)
+VALUES(10,'Helen',26, 2018-02-15,'null','Dublin');
+
+INSERT into dbo.customerLg(CUSTOMERS_ID,LAST_NAME,FIRST_NAME,PHONE,CUS_ADDRESS,CITY,CUS_STATE,ZIP)
+VALUES(11,'Charlie',28, 2018-01-15,'null','Dublin');
+
+INSERT into dbo.customerLg(CUSTOMERS_ID,LAST_NAME,FIRST_NAME,PHONE,CUS_ADDRESS,CITY,CUS_STATE,ZIP)
+VALUES(12,'Ben',26, 2018-01-25,'null','Dublin');
+
+SET IDENTITY_INSERT user OFF;
+
+
+SET IDENTITY_INSERT dbo.Post ON;
+ INSERT into dbo.Post(Post_ID,User_ID,Post_Message,Post_time)
+VALUES(51, 2,'Can you guess my name','2018-03-14 13:23:44');
+
+INSERT into dbo.Post(INVOICE_ID,CUSTOMERS_ID,INVOICE_DATE)
+VALUES(52, 3,'Am having a party','2018-02-14 11:13:44');
+
+INSERT into dbo.Post(INVOICE_ID,CUSTOMERS_ID, INVOICE_DATE)
+VALUES(53, 4,'l am just loving it',2017-05-14 13:03:14' );
+
+INSERT into dbo.Post(INVOICE_ID,CUSTOMERS_ID, INVOICE_DATE)
+VALUES(54, 5,'What's going on here','2018-01-21  12:03:14' );
+
+INSERT into dbo.Post(INVOICE_ID,CUSTOMERS_ID, INVOICE_DATE)
+VALUES(55, 6,'Am off work today',' 2018-01-12 15:03:14');
+
+INSERT into dbo.Post(INVOICE_ID,CUSTOMERS_ID, INVOICE_DATE)
+VALUES(55, 7,'Am ready for anything', '2018-03-05 18:06:14 ');
+
+INSERT into dbo.Post(INVOICE_ID,CUSTOMERS_ID, INVOICE_DATE)
+VALUES(56, 8,'l am justing having a bad day',2017-10-25 17:06:14' );
+
+INSERT into dbo.Post(INVOICE_ID,CUSTOMERS_ID, INVOICE_DATE)
+VALUES(57, 9,'l like this site',2018-01-25  14:06:14 ');
+
+INSERT into dbo.Post(INVOICE_ID,CUSTOMERS_ID, INVOICE_DATE)
+VALUES(58, 10,'What's happening here', '2018-02-15 15:06:14' );
+
+INSERT into dbo.Post(INVOICE_ID,CUSTOMERS_ID, INVOICE_DATE)
+VALUES(59, 11,'Hello everyone','2018-01-15 16:06:14' );
+
+INSERT into dbo.Post(INVOICE_ID,CUSTOMERS_ID, INVOICE_DATE)
+VALUES(60, 12, 'Is a good day', '2018-01-15 16:06:14');
+
+SET IDENTITY_INSERT dbo.Post OFF;
