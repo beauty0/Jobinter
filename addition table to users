@@ -2,40 +2,40 @@
  SET IDENTITY_INSERT users ON;
 
  INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(12,'Cinda', 31,'2018-03-14', '2019-10-08', 'Portlaoise');
+VALUES(92,'Isa', 21,'2018-03-14', '2019-10-08', 'Portlaoise');
 
  INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(13,'HIER',28,'2018-02-14','2020-12-01','Dublin');
+VALUES(93,'bela',28,'2018-02-14','2019-12-01','Dublin');
 
  INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(14,'Meber',34,'2017-06-14','2019-12-01', 'Leitrim');
+VALUES(94,'Meber',34,'2017-05-14','2019-12-01', 'Leitrim');
 
  INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(15,'Sline','33','2018-01-21','2021-01-17','Cork');
+VALUES(95,'Saleh',33,'2018-01-21','2021-01-17','Cork');
 
 INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(16,'Nil', 27, '2018-01-23','2018-01-12','Dublin');
+VALUES(96,'Nick', 27, '2018-01-12','2018-01-12','Dublin');
 
 INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(17,'Aony',23, '2017-03-05','2019-08-24','London');
+VALUES(97,'Ay',23, '2017-03-05','2019-08-24','London');
 
 INSERT into dbo.users(user_ID, user_NAME,user_age, Join_date, End_date, Location)
-VALUES(18,'AyI',18,'2017-10-25','2019-10-25','Dublin');
+VALUES(98,'Ben',18,'2017-10-25','2019-10-25','Dublin');
 
 INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(19,'Ymine', 19, '2018-01-25','2020-11-25','London');
+VALUES(99,'Ymine', 19, '2018-01-25','2020-11-25','London');
 
 INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(20,'Hleen', 16, '2018-02-15','2020-12-25','Dublin');
+VALUES(100,'Hleen', 16, '2018-02-15','2020-12-25','Dublin');
 
 INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(21,'Carlie',28, '2017-02-15','2020-02-10','Dublin');
+VALUES(101,'Carlie',28, '2017-02-15','2020-02-10','Dublin');
 
 INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(22,'Benny',26, '2017-04-25','2020-06-17','Dublin');
+VALUES(102,'Benny',26, '2017-04-25','2020-06-17','Dublin');
 
 INSERT into dbo.users(user_ID,user_NAME,user_age, Join_date, End_date, Location)
-VALUES(23,'Penny',27, '2017-04-25','2020-06-17','Dublin');
+VALUES(103,'Penny',27, '2017-03-25','2020-06-17','Dublin');
 
 
 
