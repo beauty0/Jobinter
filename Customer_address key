@@ -1,0 +1,24 @@
+USE [Mystore]
+GO
+
+/****** Object:  Index [PK__Customer__03BDEBDAF591253D]    Script Date: 3/16/2018 4:07:27 AM ******/
+ALTER TABLE [dbo].[Customer_Addresses] ADD  CONSTRAINT [PK__Customer__03BDEBDAF591253D] PRIMARY KEY CLUSTERED 
+(
+	[Address_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+GO
+
+USE [Mystore]
+GO
+
+ALTER TABLE [dbo].[Customer_Addresses]  WITH CHECK ADD  CONSTRAINT [FK_Customer_Addresses_Customers] FOREIGN KEY([Customer_ID])
+REFERENCES [dbo].[Customers] ([Customer_ID])
+ON UPDATE CASCADE
+ON DELETE CASCADE
+GO
+
+ALTER TABLE [dbo].[Customer_Addresses] CHECK CONSTRAINT [FK_Customer_Addresses_Customers]
+GO
+
+
+
