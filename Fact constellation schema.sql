@@ -33,7 +33,7 @@ CREATE TABLE Shipper (
 	);
 
 CREATE TABLE Times (
-	timeID	 	int identity IDENTITY(21,1) not null PRIMARY KEY,
+	timeID	 	int identity IDENTITY(20,1) not null PRIMARY KEY,
 	OrderDate       DATETIME not null 
 	);
 
