@@ -37,7 +37,7 @@ CREATE TABLE Times (
 	OrderDate       DATETIME not null 
 	);
 
-	CREATE TABLE Orders (
+	CREATE TABLE OrdersFact (
 	Order_ID    int identity(110,1) not null PRIMARY KEY,          
 	Customer_ID	 	int  not null,
 	Address_ID	 	int  not null,
