@@ -5,7 +5,7 @@ as
 (
 SELECT [Customer_ID], [First_name],
 	  (SELECT COUNT (1) 
-  FROM [Mystore].[dbo].[Orders]
+  FROM [Mystore].[dbo].[OrdersFact]
   Where Orders.Customer_ID = Customers.Customer_ID) as [OrderPrice]
   from [Mystore].[dbo].[Customers]
   )
